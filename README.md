@@ -1,19 +1,19 @@
 
 ConsensusBreaker-Blade: Anti-Consensus Thinking Trainer
 
-#Project Overview
+# Project Overview
 ConsensusBreaker-Blade is an AI-driven training platform designed to help users break through industry inertia and uncover innovation opportunities by challenging conventional wisdom. Inspired by visionaries like Steve Jobs, it features three training modes to cultivate anti-consensus thinking, ideal for product managers, designers, and innovators.
 
-#Core Features
+# Core Features
 Anti-Consensus Training Modes
-Autonomous Exploration: Browse 100+ classic cases (iPhone, Dyson, etc.) to understand innovative thinking patterns.
-Guided Training: AI generates challenging questions (e.g., "Must headphones be in-ear?") to enhance boundary-breaking thinking.
-Creative Sprint: Combine AI analysis to identify industry innovation opportunities.
-Opportunity Discovery Tools
+1、Autonomous Exploration: Browse 100+ classic cases (iPhone, Dyson, etc.) to understand innovative thinking patterns.
+2、Guided Training: AI generates challenging questions (e.g., "Must headphones be in-ear?") to enhance boundary-breaking thinking.
+3、Creative Sprint: Combine AI analysis to identify industry innovation opportunities.
+
+# Opportunity Discovery Tools
 Industry consensus dismantling (e.g., challenging "coffee must be made by baristas").
 Implicit need mining via NLP-based emotional analysis.
-Quick Start
-Local Run
+
 bash
 git clone [project-url]  
 open index.html  
@@ -23,21 +23,19 @@ API Configuration (Optional)
 🗡️ Core Value: Transform innovative thinking from accidental inspiration into a trainable capability through anti-consensus training and emotional insight.
 
 
-
-
 破魔刀：反共识思维训练器
-项目简介
+# 项目简介
 破魔刀是一个 AI 驱动的训练平台，帮助用户突破行业惯性，通过挑战常规认知发现创新机会。受乔布斯等创新者启发，平台以三大训练模式培养反共识思维，适合产品经理、设计师等创新人群。
-核心功能
+# 核心功能
 反共识训练模式
-自由探索：浏览 15 + 经典案例（iPhone、戴森等），理解创新思维模式。
-主动训练：AI 生成挑战性问题（如 "耳机必须入耳吗？"），提升破界思考能力。
-创意冲刺：结合 AI 分析挖掘行业创新机会点。
-机会发现工具
+1、自由探索：浏览 15 + 经典案例（iPhone、戴森等），理解创新思维模式。
+2、主动训练：AI 生成挑战性问题（如 "耳机必须入耳吗？"），提升破界思考能力。
+3、创意冲刺：结合 AI 分析挖掘行业创新机会点。
+
+# 机会发现工具
 行业共识拆解（如挑战 "咖啡必须由专业师制作" 的惯性认知）。
 基于 NLP 的隐性需求挖掘，分析用户情绪背后的真实诉求。
-快速开始
-本地运行
+
 bash
 git clone [项目地址]  
 打开 index.html  
