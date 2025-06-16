@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>破魔刀挑战模式 - 反共识思维深度训练</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 加载动画 -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="sword-animation">🗡️</div>
+            <h2>破魔刀正在磨砺中...</h2>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <p id="loading-text">准备反共识思维训练</p>
+        </div>
+    </div>
+
+    <!-- 主界面 -->
+    <div id="main-app" class="main-app" style="display: none;">
+        <!-- 顶部导航 -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-icon">🗡️</span>
+                    <span class="logo-text">破魔刀挑战模式</span>
+                </div>
+                <div class="header-info">
+                    <div class="ai-status" id="ai-status">
+                        <span class="status-indicator"></span>
+                        <span class="status-text">本地演示模式</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- 主要内容区域 -->
+        <main class="main-content">
+            <!-- 挑战选择界面 -->
+            <section id="challenge-selection" class="challenge-selection">
+                <div class="selection-header">
+                    <h1>🗡️ 破魔刀的试炼</h1>
+                    <p class="subtitle">选择一个有趣的场景，和破魔刀一起探索创新的可能性</p>
+                    <div class="challenge-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">2</span>
+                            <span class="stat-label">挑战场景</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">5</span>
+                            <span class="stat-label">最大轮次</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">4</span>
+                            <span class="stat-label">评价维度</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scenarios-grid" id="scenarios-grid">
+                    <!-- 场景卡片将在这里动态生成 -->
+                </div>
+            </section>
+
+            <!-- 挑战进行界面 -->
+            <section id="challenge-interface" class="challenge-interface" style="display: none;">
+                <!-- 进度条 -->
+                <div class="challenge-progress">
+                    <button class="back-btn" onclick="showChallengeSelection()">
+                        <i class="fas fa-arrow-left"></i> 返回选择
+                    </button>
+                    <div class="progress-info">
+                        <span class="industry-tag" id="current-industry"></span>
+                        <span class="round-info" id="round-info">第 1 轮交流</span>
+                    </div>
+                </div>
+
+                <!-- 左侧：场景信息 -->
+                <div class="challenge-layout">
+                    <div class="scenario-panel">
+                        <div class="scenario-header">
+                            <h2 id="scenario-title"></h2>
+                            <div class="difficulty-badge" id="difficulty-badge">深度挑战</div>
+                        </div>
+
+                        <div class="scenario-content">
+                            <div class="info-section">
+                                <h4><i class="fas fa-info-circle"></i> 背景描述</h4>
+                                <p id="scenario-background"></p>
+                            </div>
+
+                            <div class="info-section">
+                                <h4><i class="fas fa-target"></i> 主流共识</h4>
+                                <ul id="consensus-list"></ul>
+                            </div>
+
+                            <div class="info-section">
+                                <h4><i class="fas fa-sword"></i> 破魔刀的挑战</h4>
+                                <div class="challenge-question" id="challenge-question"></div>
+                            </div>
+
+                            <div class="info-section" id="hints-section">
+                                <h4><i class="fas fa-lightbulb"></i> 思考提示</h4>
+                                <ul id="hints-list"></ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 右侧：对话区域 -->
+                    <div class="interaction-panel">
+                        <!-- 对话历史 -->
+                        <div class="conversation-area" id="conversation-area">
+                            <div class="teacher-welcome">
+                                <div class="avatar teacher-avatar">🗡️</div>
+                                <div class="message-bubble teacher-message">
+                                    <div class="message-header">
+                                        <strong>破魔刀导师</strong>
+                                        <span class="timestamp">刚刚</span>
+                                    </div>
+                                    <div class="message-content">
+                                        欢迎来到创新思维的探索之旅！我是破魔刀，你的思维伙伴，会陪伴你一起发现那些被忽视的可能性。让我们一起跳出常规思维，用全新的视角重新审视这个世界。准备好开始这场有趣的思维冒险了吗？
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 输入区域 -->
+                        <div class="input-area">
+                            <div class="input-header">
+                                <h4>💭 你的反共识思考</h4>
+                                <div class="input-tips">
+                                    <span class="tip">💡 质疑基础假设</span>
+                                    <span class="tip">🚀 提出创新方案</span>
+                                    <span class="tip">🔗 逻辑清晰论证</span>
+                                </div>
+                            </div>
+                            <textarea 
+                                id="answer-input" 
+                                placeholder="在这里输入你的反共识思考和解决方案...&#10;&#10;破魔刀导师期待看到：&#10;• 对基础假设的深度质疑&#10;• 创新的解决思路和方案&#10;• 清晰的逻辑论证过程&#10;• 可行的实施路径设计"
+                                rows="8"
+                            ></textarea>
+                            <div class="input-actions">
+                                <div class="word-count">
+                                    <span id="word-count">0</span> 字
+                                    <span class="min-words">（建议至少100字）</span>
+                                </div>
+                                <div class="action-buttons">
+                                    <button class="hint-btn" onclick="requestHint()">
+                                        <i class="fas fa-lightbulb"></i> 请求提示
+                                    </button>
+                                    <button class="submit-btn" onclick="submitAnswer()" id="submit-btn">
+                                        <i class="fas fa-paper-plane"></i> 提交答案
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 挑战完成界面 -->
+            <section id="challenge-completion" class="challenge-completion" style="display: none;">
+                <!-- 完成内容将在这里动态生成 -->
+            </section>
+        </main>
+
+        <!-- AI配置面板 -->
+        <div id="ai-config-panel" class="ai-config-panel">
+            <div class="config-header">
+                <h3>🤖 AI服务配置</h3>
+                <button class="close-btn" onclick="toggleAIConfig()">×</button>
+            </div>
+            <div class="config-content">
+                <div class="provider-section">
+                    <label>选择AI服务商：</label>
+                    <select id="ai-provider" onchange="switchAIProvider()">
+                        <option value="local_demo">本地演示模式（无需配置）</option>
+                        <option value="deepseek">DeepSeek（推荐）</option>
+                        <option value="qwen">通义千问</option>
+                        <option value="ernie">文心一言</option>
+                        <option value="zhipu">智谱AI</option>
+                        <option value="moonshot">月之暗面</option>
+                    </select>
+                </div>
+                <div class="api-key-section" id="api-key-section" style="display: none;">
+                    <label>API密钥：</label>
+                    <input type="password" id="api-key-input" placeholder="请输入API密钥">
+                    <button onclick="saveAPIKey()">保存</button>
+                </div>
+                <div class="config-status" id="config-status">
+                    <span class="status-indicator success"></span>
+                    <span>本地演示模式已启用</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 配置按钮 -->
+        <button class="config-toggle" onclick="toggleAIConfig()" title="AI配置">
+            <i class="fas fa-cog"></i>
+        </button>
+    </div>
+
+    <!-- 通知系统 -->
+    <div id="notification-container" class="notification-container"></div>
+
+    <!-- 脚本文件 -->
+    <script src="js/config.js"></script>
+    <script src="js/ai-service.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html> 
