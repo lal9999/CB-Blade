@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>案例学习库 - InnoLab 创新实验室</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 背景效果 -->
+    <div class="background-grid"></div>
+    <div class="background-blur"></div>
+
+    <!-- 导航栏 -->
+    <header class="header glass">
+        <nav class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">🧠</span>
+                <div class="logo-text">
+                    <span class="brand-name">InnoLab</span>
+                    <span class="brand-tagline">创新实验室</span>
+                </div>
+            </div>
+            <div class="user-info">
+                <span class="level-badge">Lv.3</span>
+                <span class="points">2,850 分</span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 主内容 -->
+    <main class="main-content">
+        <!-- 页面标题 -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">案例学习库</h1>
+                <p class="hero-subtitle">深度学习反共识创新案例，建立思维基础</p>
+                
+                <div class="hero-cta">
+                    <button class="btn-primary" onclick="window.location.href='index.html'">
+                        <span class="btn-icon">🏠</span>
+                        返回首页
+                    </button>
+                    <button class="btn-secondary" onclick="startLearning()">
+                        <span class="btn-icon">📚</span>
+                        开始学习
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 案例展示 -->
+        <section class="modules-section">
+            <div class="section-header">
+                <h2 class="section-title">精选创新案例</h2>
+                <p class="section-subtitle">40个深度分析的反共识创新案例</p>
+            </div>
+            
+            <div class="modules-grid">
+                <!-- 案例1 -->
+                <div class="module-card case-library">
+                    <div class="module-header">
+                        <div class="module-icon">🚗</div>
+                        <div class="module-info">
+                            <h3 class="module-title">特斯拉直销模式</h3>
+                            <span class="module-level">颠覆指数: 9.2</span>
+                        </div>
+                    </div>
+                    <div class="module-content">
+                        <p class="module-description">打破汽车经销商传统，直接面向消费者销售</p>
+                        <ul class="module-features">
+                            <li><span class="feature-icon">🎯</span>共识突破: 渠道依赖</li>
+                            <li><span class="feature-icon">⚡</span>创新来源: 商业模式</li>
+                            <li><span class="feature-icon">📊</span>可行性: 8.5/10</li>
+                            <li><span class="feature-icon">💡</span>影响力: 9.0/10</li>
+                        </ul>
+                    </div>
+                    <button class="module-btn">
+                        深度分析 <span class="btn-arrow">→</span>
+                    </button>
+                </div>
+
+                <!-- 案例2 -->
+                <div class="module-card case-library">
+                    <div class="module-header">
+                        <div class="module-icon">🏠</div>
+                        <div class="module-info">
+                            <h3 class="module-title">Airbnb共享经济</h3>
+                            <span class="module-level">颠覆指数: 9.5</span>
+                        </div>
+                    </div>
+                    <div class="module-content">
+                        <p class="module-description">将私人住宅转化为商业住宿空间</p>
+                        <ul class="module-features">
+                            <li><span class="feature-icon">🎯</span>共识突破: 专业化要求</li>
+                            <li><span class="feature-icon">⚡</span>创新来源: 平台经济</li>
+                            <li><span class="feature-icon">📊</span>可行性: 9.0/10</li>
+                            <li><span class="feature-icon">💡</span>影响力: 9.5/10</li>
+                        </ul>
+                    </div>
+                    <button class="module-btn">
+                        深度分析 <span class="btn-arrow">→</span>
+                    </button>
+                </div>
+
+                <!-- 案例3 */
+                <div class="module-card case-library">
+                    <div class="module-header">
+                        <div class="module-icon">💰</div>
+                        <div class="module-info">
+                            <h3 class="module-title">微信支付场景革命</h3>
+                            <span class="module-level">颠覆指数: 8.8</span>
+                        </div>
+                    </div>
+                    <div class="module-content">
+                        <p class="module-description">从社交工具到支付入口的跨界创新</p>
+                        <ul class="module-features">
+                            <li><span class="feature-icon">🎯</span>共识突破: 功能边界</li>
+                            <li><span class="feature-icon">⚡</span>创新来源: 场景融合</li>
+                            <li><span class="feature-icon">📊</span>可行性: 8.0/10</li>
+                            <li><span class="feature-icon">💡</span>影响力: 9.0/10</li>
+                        </ul>
+                    </div>
+                    <button class="module-btn">
+                        深度分析 <span class="btn-arrow">→</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 底部信息 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 创新实验室. 专注反共识思维训练与创新能力提升</p>
+        </div>
+    </footer>
+
+    <!-- 脚本文件 -->
+    <script src="js/app.js"></script>
+    <script>
+        function startLearning() {
+            alert('案例学习功能开发中...');
+        }
+    </script>
+</body>
+</html> 

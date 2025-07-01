@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnoLab - 反共识思维训练平台</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+    <!-- 背景装饰 -->
+    <div class="background-grid"></div>
+    <div class="background-blur"></div>
+
+    <!-- 顶部导航 -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">🧠</div>
+                <div class="logo-text">
+                    <span class="brand-name">创新实验室</span>
+                    <span class="brand-tagline">InnoLab</span>
+                </div>
+            </div>
+            <div class="user-info">
+                <div class="level-badge" id="userLevel">Lv.1 探索者</div>
+                <div class="points" id="userPoints">经验: 0</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主要内容区域 -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">突破思维界限，开启创新未来</h1>
+                <p class="hero-subtitle">专业的反共识思维训练平台，助力个人和企业实现创新突破</p>
+                
+                <!-- 核心数据展示 -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">15,000+</div>
+                        <div class="stat-label">训练完成数</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">&lt;20分钟</div>
+                        <div class="stat-label">平均用时</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">85%</div>
+                        <div class="stat-label">满意度</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">反共识思考提升</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">120K</div>
+                        <div class="stat-label">商业共识库</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">20</div>
+                        <div class="stat-label">合成智能体</div>
+                    </div>
+                </div>
+                
+                <div class="hero-cta">
+                    <button class="btn-primary" onclick="showFreeExperience()">
+                        <span class="btn-icon">✨</span>
+                        免费体验
+                    </button>
+                    <button class="btn-secondary" onclick="showPaidFeatures()">
+                        <span class="btn-icon">💎</span>
+                        付费使用
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 功能模块 -->
+        <section class="modules-section">
+            <div class="section-header">
+                <h2 class="section-title">三大核心模块</h2>
+                <p class="section-subtitle">从基础学习到创新实践的完整体系</p>
+            </div>
+            
+            <div class="modules-grid">
+                <!-- 案例学习库 -->
+                <div class="module-card case-library">
+                    <div class="module-header">
+                        <div class="module-icon">📚</div>
+                        <div class="module-info">
+                            <h3 class="module-title">案例学习库</h3>
+                            <span class="module-level">基础模块</span>
+                            <span class="module-price free">免费</span>
+                        </div>
+                    </div>
+                    <div class="module-content">
+                        <p class="module-description">深度学习反共识创新案例，建立思维基础</p>
+                        <ul class="module-features">
+                            <li><span class="feature-icon">💡</span>40个精选创新案例</li>
+                            <li><span class="feature-icon">🔍</span>6种创新来源分析</li>
+                            <li><span class="feature-icon">📊</span>四维评估体系</li>
+                            <li><span class="feature-icon">⭐</span>颠覆性指数评分</li>
+                        </ul>
+                        <div class="module-stats">
+                            <span class="stat">案例数: 40+</span>
+                            <span class="stat">覆盖行业: 35+</span>
+                        </div>
+                    </div>
+                    <button class="module-btn" onclick="window.location.href='case-library.html'">
+                        进入学习 <span class="btn-arrow">→</span>
+                    </button>
+                </div>
+
+                <!-- 反共识训练 -->
+                <div class="module-card training-center">
+                    <div class="module-header">
+                        <div class="module-icon">🎯</div>
+                        <div class="module-info">
+                            <h3 class="module-title">反共识训练</h3>
+                            <span class="module-level">核心模块</span>
+                            <span class="module-price free">免费</span>
+                        </div>
+                    </div>
+                    <div class="module-content">
+                        <p class="module-description">三种训练模式，全方位提升反共识思维能力</p>
+                        
+                        <!-- 训练模式选择 -->
+                        <div class="training-modes">
+                            <div class="mode-item dialogue-mode">
+                                <span class="mode-icon">💬</span>
+                                <span class="mode-name">对话模式</span>
+                                <span class="mode-desc">启发式对话训练</span>
+                            </div>
+                            <div class="mode-item challenge-mode">
+                                <span class="mode-icon">⚡</span>
+                                <span class="mode-name">挑战模式</span>
+                                <span class="mode-desc">快速判断训练</span>
+                            </div>
+                            <div class="mode-item scenario-mode">
+                                <span class="mode-icon">🎭</span>
+                                <span class="mode-name">情景模式</span>
+                                <span class="mode-desc">场景化深度训练</span>
+                            </div>
+                        </div>
+                        
+                        <div class="module-stats">
+                            <span class="stat">AI分析: 智能</span>
+                            <span class="stat">训练时长: 15-30分钟</span>
+                        </div>
+                    </div>
+                    <button class="module-btn primary" onclick="window.location.href='training.html'">
+                        开始训练 <span class="btn-arrow">→</span>
+                    </button>
+                </div>
+
+                <!-- 破界创新引擎 -->
+                <div class="module-card innovation-engine">
+                    <div class="module-header">
+                        <div class="module-icon">🚀</div>
+                        <div class="module-info">
+                            <h3 class="module-title">破界创新引擎</h3>
+                            <span class="module-level">高级模块</span>
+                            <span class="module-price">付费</span>
+                        </div>
+                    </div>
+                    <div class="module-content">
+                        <p class="module-description">AI驱动的创新方案生成器，从想法到产品</p>
+                        
+                        <!-- 创新流程 -->
+                        <div class="innovation-process">
+                            <div class="process-step">
+                                <span class="step-number">1</span>
+                                <span class="step-text">行业选择</span>
+                            </div>
+                            <div class="process-arrow">→</div>
+                            <div class="process-step">
+                                <span class="step-number">2</span>
+                                <span class="step-text">共识分析</span>
+                            </div>
+                            <div class="process-arrow">→</div>
+                            <div class="process-step">
+                                <span class="step-number">3</span>
+                                <span class="step-text">突破点选择</span>
+                            </div>
+                            <div class="process-arrow">→</div>
+                            <div class="process-step">
+                                <span class="step-number">4</span>
+                                <span class="step-text">方案生成</span>
+                            </div>
+                        </div>
+                        
+                        <div class="module-stats">
+                            <span class="stat">成功率: 85%</span>
+                            <span class="stat">平均耗时: 25分钟</span>
+                        </div>
+                    </div>
+                    <button class="module-btn" onclick="window.location.href='innovation.html'">
+                        启动引擎 <span class="btn-arrow">→</span>
+                    </button>
+                </div>
+
+                <!-- 组合创新引擎 -->
+                <div class="module-card combination-engine">
+                    <div class="module-header">
+                        <div class="module-icon">🔧</div>
+                        <div class="module-info">
+                            <h3 class="module-title">组合创新引擎</h3>
+                            <span class="module-level">专家模块</span>
+                            <span class="module-price">付费</span>
+                        </div>
+                    </div>
+                    <div class="module-content">
+                        <p class="module-description">多维度创新组合分析，发现跨领域创新机会</p>
+                        
+                        <!-- 组合特性 -->
+                        <div class="combination-features">
+                            <div class="feature-item">
+                                <span class="feature-icon">🔗</span>
+                                <span class="feature-text">多点组合</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">🌐</span>
+                                <span class="feature-text">跨域发现</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">⚡</span>
+                                <span class="feature-text">协同效应</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">📊</span>
+                                <span class="feature-text">效果预测</span>
+                            </div>
+                        </div>
+                        
+                        <div class="module-stats">
+                            <span class="stat">组合方案: 1000+</span>
+                            <span class="stat">成功预测: 92%</span>
+                        </div>
+                    </div>
+                    <button class="module-btn" onclick="window.location.href='combination.html'">
+                        开启组合 <span class="btn-arrow">→</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 特色介绍 -->
+        <section class="features-section">
+            <div class="section-header">
+                <h2 class="section-title">为什么选择我们</h2>
+                <p class="section-subtitle">专业、智能、高效的反共识思维训练体验</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">🤖</div>
+                    <h3 class="feature-title">AI智能分析</h3>
+                    <p class="feature-desc">先进的AI引擎提供个性化分析和指导建议</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">📊</div>
+                    <h3 class="feature-title">科学评估体系</h3>
+                    <p class="feature-desc">多维度评分系统，精准衡量思维突破程度</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🎯</div>
+                    <h3 class="feature-title">实战化训练</h3>
+                    <p class="feature-desc">基于真实商业案例，提升实际应用能力</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">⚡</div>
+                    <h3 class="feature-title">快速见效</h3>
+                    <p class="feature-desc">短时间内显著提升创新思维和决策能力</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 免费体验选择模态框 -->
+    <div id="freeExperienceModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>选择免费体验模式</h3>
+                <span class="close" onclick="closeModal('freeExperienceModal')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p class="modal-desc">我们为您提供两种免费体验模式，帮助您快速了解反共识思维训练的魅力</p>
+                <div class="experience-options">
+                    <div class="option-card" onclick="startFreeExperience('case-library')">
+                        <div class="option-icon">📚</div>
+                        <h4>案例学习体验</h4>
+                        <p>探索精选创新案例，了解反共识思维的应用场景</p>
+                        <div class="option-features">
+                            <span>🎯 5个经典案例</span>
+                            <span>📊 基础分析工具</span>
+                            <span>⏱️ 约10分钟</span>
+                        </div>
+                    </div>
+                    <div class="option-card" onclick="startFreeExperience('training')">
+                        <div class="option-icon">🎯</div>
+                        <h4>反共识训练体验</h4>
+                        <p>通过互动练习，初步体验反共识思维训练</p>
+                        <div class="option-features">
+                            <span>💬 简化对话模式</span>
+                            <span>🔍 基础反馈分析</span>
+                            <span>⏱️ 约15分钟</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <p class="upgrade-hint">💡 升级到付费版本解锁更多功能和专业分析</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 付费功能说明模态框 -->
+    <div id="paidFeaturesModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>专业版功能介绍</h3>
+                <span class="close" onclick="closeModal('paidFeaturesModal')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="pricing-hero">
+                    <div class="pricing-badge">🚀 专业版</div>
+                    <div class="pricing-options">
+                        <div class="pricing-option">
+                            <span class="price-amount">￥199</span>
+                            <span class="price-period">/月</span>
+                        </div>
+                        <div class="pricing-divider">或</div>
+                        <div class="pricing-option annual">
+                            <span class="price-amount">￥999</span>
+                            <span class="price-period">/年</span>
+                            <span class="price-save">省￥1389</span>
+                        </div>
+                    </div>
+                    <p class="pricing-desc">解锁全部功能，获得专业级反共识思维训练体验</p>
+                </div>
+                
+                <div class="features-comparison">
+                    <div class="feature-section">
+                        <h4>🎯 完整训练体系</h4>
+                        <ul>
+                            <li>三种专业训练模式（对话/挑战/情景）</li>
+                            <li>40+完整案例库访问</li>
+                            <li>AI智能个性化分析</li>
+                            <li>详细学习轨迹跟踪</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="feature-section">
+                        <h4>🚀 破界创新引擎</h4>
+                        <ul>
+                            <li>AI驱动的创新方案生成</li>
+                            <li>行业深度分析工具</li>
+                            <li>商业模式设计助手</li>
+                            <li>竞争优势识别系统</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="feature-section">
+                        <h4>📊 专业分析报告</h4>
+                        <ul>
+                            <li>深度思维模式分析</li>
+                            <li>个性化提升建议</li>
+                            <li>行业趋势洞察</li>
+                            <li>创新能力评估报告</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="modal-footer">
+                    <button class="btn-primary" onclick="showComingSoon()">立即升级</button>
+                    <button class="btn-secondary" onclick="closeModal('paidFeaturesModal')">稍后再说</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Coming Soon 提示框 -->
+    <div id="comingSoonModal" class="modal">
+        <div class="modal-content small">
+            <div class="modal-header">
+                <h3>即将推出</h3>
+                <span class="close" onclick="closeModal('comingSoonModal')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="coming-soon-content">
+                    <div class="coming-soon-icon">🚧</div>
+                    <h4>付费功能开发中</h4>
+                    <p>我们正在完善付费功能，敬请期待！</p>
+                    <p>目前您可以免费体验我们的核心功能。</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-primary" onclick="closeModal('comingSoonModal')">了解了</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部信息 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 创新实验室. 专注反共识思维训练与创新能力提升</p>
+        </div>
+    </footer>
+
+    <!-- 脚本文件 -->
+    <script src="js/config.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+# 依赖目录 | Dependencies
+node_modules/
+venv/
+env/
+__pycache__/
+*.pyc
+
+# 系统文件 | System files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.tmp
+*.temp
+
+# IDE文件 | IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 日志文件 | Log files
+*.log
+logs/
+
+# 环境配置 | Environment config
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 构建输出 | Build output
+dist/
+build/
+*.min.js
+*.min.css
+
+# 备份文件 | Backup files
+*.backup
+*.bak
+*.old
+
+# 临时文件 | Temporary files
+.tmp/
+temp/
+
+# 用户上传文件 | User uploads
+uploads/
+user-data/
+
+# 测试覆盖率 | Test coverage
+coverage/
+.nyc_output/
+
+# 安全文件 | Security files
+*.key
+*.pem
+*.cert
+config/secrets.json 
